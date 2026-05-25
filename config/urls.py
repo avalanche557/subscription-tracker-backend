@@ -27,5 +27,9 @@ urlpatterns = [
         'api/subscriptions/',
         include('subscriptions.urls')
     ),
+    path(
+    'api/sms/',
+    include('sms_parser.urls')
+),
 
 ]
