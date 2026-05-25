@@ -23,5 +23,9 @@ urlpatterns = [
     path('health/', health_check),
     
     path('api/auth/', include('users.urls')),
+    path(
+        'api/subscriptions/',
+        include('subscriptions.urls')
+    ),
 
 ]
